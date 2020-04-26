@@ -1,16 +1,28 @@
-<script src="https://code.jquery.com/jquery-3.5.0.min.js"
-        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+var timeEl = document.querySelector(".time");
 
+var score = 0;
+var secondsLeft = 30;
+
+function setTime() {
+    var timerInverval = setInterval(function() {
+        secondsLeft--;
+        timeEl.textContent = secondsLeft + " seconds remaining on your quiz!";
+
+        if (secondsLeft === 0) {
+            clearInterval(timerInverval);
+            sendToEnd();
+        }
+    }, 1000);
+}
+
+
+// to do, send this to send to finaly screen, just display score and stuff
+// fuction sendToEnd() {
+//     timeEl.textContent = " ";
     
-//
-
-$(document).ready(function(){
-    var count = 0;
-    var time = 31;
-    var isSelected = false;
-    var ticker;
-    var correct = 0;
-    var incorrect = 0;
-    var unanswered = 0;
+// }
 
 
+setTime();
+
+console.log(secondsLeft);
