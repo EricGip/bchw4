@@ -1,3 +1,5 @@
+Code quiz made with javascript! 
+
 1. When I click start
    * timer starts and show a question
 
@@ -12,12 +14,3 @@
 
 5. WHen game is over,
    * I can save initials and score. 
-
-
-
-Notes:
-
-1. Started with a timer, 08-Ins_timer_interval helped a lot! 
-
-2. Going to try to make an event onclick function on the start button. 
-
