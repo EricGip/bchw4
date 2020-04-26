@@ -28,6 +28,33 @@
 
         <hr class="my-4">
 
+        <!--- After we click start, I want to hide this.-->
+        <section id="titleScreen" class="show">
+            <button id="startButton" type="Button" class="btn btn-primary"> Click here to start! </button>
+        </section>
+
+        <!--- After we click start, I want to show this-->
+        <section id="quiz" class="hide">
+            <!--- this row will show the questions-->
+            <div class="row">
+                <div class="questions">
+                    <h3 id="questionTitle"></h3>
+                </div>
+            </div>
+
+            <!-- this row will show the choices, and also tell the player if they were correct or wrong.-->
+            <div class="row">
+                <div id="choices"></div>
+                <div id="response"></div>
+            </div>
+
+        <!-- when the game is over, I want to show high scores and initials.-->
+        <section id='endScreen' class="hide">
+            <div class="row">
+                <h3 id="highScores"></h3>
+            </div>
+        </section>
+
         <script src="assets/js/main.js"> </script>
 
     </div>
